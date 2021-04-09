@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel='stylesheet' href="main.css">
+</head>
+<!--
+https://www.sitepoint.com/web-scraping-in-node-js/
+https://www.npmjs.com/package/cheerio
+https://zetcode.com/javascript/cheerio/
+-->
+<body>
+
+  <div class="wrapper">
+    <div class="box a"> <h6>-- COVID-19 CASUALTY DETETOR -- Public Edition --</h6></div>
+    <div class="box b">
+      <table border="1">
+        <tr>
+          <td><p>counterCode</p></td>   <td class="resultCode"></td>
+        </tr>
+        <tr>
+          <td><p>confirmed</p></td>   <td class="resultConfirmed"></td>
+        </tr>
+        <tr>
+          <td><p>recovered</p></td>   <td class="resultRecovered"></td>
+        </tr>
+        <tr>
+          <td><p>critical</p></td>   <td class="resultCritical"></td>
+        </tr>
+        <tr>
+          <td><p>deaths</p></td>   <td class="resultDeaths"></td>
+        </tr>
+        <tr>
+          <td><p>lastChanged</p></td>   <td class="resultLastChanged"></td>
+        </tr>
+        <tr>
+          <td><p>lastUpdated</p></td>   <td class="resultLastUpdated"></td>
+        </tr>
+
+      </table>
+    </div>
+    <div class="box c">
+      <h6>Select Country:</h6>
+    <form>
+      <select id="selectCountry" onchange="">
+        <option value="Canada">Canada</option>
+        <option value="China">China</option>
+        <option value="Guatemala">Guatemala</option>
+        <option value="Honduras">Honduras</option>
+        <option value="Italy">Italy</option>
+        <option value="India">India</option>
+        <option value="Japan">Japan</option>
+        <option value="Mexico">Mexico</option>
+        <option value="Spain">Spain</option>
+        <option value="United Kingdom">United Kingdom</option>
+        <option value="United States">United States</option>
+      </select>
+    </form>
+      <br>
+      <h6>Current international Data:</h6>
+      <button>Recieve</button>
+    </div>
+    <div class="box d">
+      <p>Upon selecting a country in the dropdown on the side, data will show up on the table.</p>
+    </div>
+  </div>
+
+</body>
+</html>
